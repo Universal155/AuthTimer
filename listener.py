@@ -13,7 +13,7 @@ def main(url,username):
             request_time = response.elapsed.total_seconds()
     
     
-            print 'hacker:%s' % password+char, request_time
+            print '%s:%s' % username, password+char, request_time
 
             check = request_time - prev_time
             prev_time = request_time
